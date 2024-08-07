@@ -11,6 +11,9 @@
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My css -->
     <link rel="stylesheet" href="style.css" />
 
@@ -53,14 +56,14 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-offset="250" data-aos-duration="500" data-aos-delay="100">
         <div class="row text-center pt-1 mb-3">
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid incidunt officia, ad consequuntur ea ipsum et modi quisquam rerum.</div>
+          <div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore minima mollitia necessitatibus consequuntur provident aut ratione, unde quae distinctio!.</div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -83,7 +86,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/projects/1.jpg" class="card-img-top" alt="Project 1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -91,7 +94,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/projects/2.jpg" class="card-img-top" alt="Project 2" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -99,7 +102,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/projects/3.jpg" class="card-img-top" alt="Project 3" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -107,7 +110,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <img src="img/projects/4.jpg" class="card-img-top" alt="Project 4" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -115,7 +118,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
               <img src="img/projects/5.jpg" class="card-img-top" alt="Project 5" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -137,7 +140,7 @@
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <div class="row text-center mb-5 mt-1">
+        <div class="row text-center mb-5 mt-1" data-aos="zoom-in">
           <div class="col">
             <h2>Contact Me</h2>
           </div>
@@ -149,19 +152,19 @@
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="df-contact-form">
-              <div class="mb-3">
+              <div class="mb-3" data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="210">
                 <label for="name" class="form-label">Nama Lengkap</label>
                 <input type="name" class="form-control" id="name" aria-describedby="name" name="nama" />
               </div>
-              <div class="mb-3">
+              <div class="mb-3" data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="220">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
               </div>
-              <div class="mb-3">
+              <div class="mb-3" data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="230">
                 <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-Kirim">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-Kirim" data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="240">Kirim</button>
 
               <button class="btn btn-primary btn-Loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -188,6 +191,13 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwLr-Pr0lp5Mek0Xwo0tC-mddQ91DbyA2k76PcYAAP-7Ls1w9oLa7tsB1VJ7W-6szqH/exec';
