@@ -1,0 +1,40 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #6C757D;
+}
+
+#projects {
+  background-color: #343A40;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+
+/* ===== PROJECTS PAGE ===== */
+.project-card {
+  background-color: #222;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+.project-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-card .card-title {
+  font-weight: 600;
+}
+
+.project-card .card-text {
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
